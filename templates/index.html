@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="./static/css/bootstrap.min.css" rel="stylesheet">
+      <link href="./static/css/bootstrap.css" rel="stylesheet">
+      <link href="./static/css/font-awesome.css" rel="stylesheet">
+      <link href="./static/css/font-awesome.min.css" rel="stylesheet">
+      <link href="/static/css/index.css" rel="stylesheet">
+<!--      <link rel="stylesheet" type="text/css" href="lightbox.css">-->
+      <!-- <link href="../css/owl.carousel.css" rel="stylesheet"> -->
+      <!-- <link href="css/style_2.css" rel="stylesheet"> -->
+      <!-- <link href="../css/responsive.css" rel="stylesheet"> -->
+<!--      <link href="../img/wutiko.png" rel="title icon" type="image/png">-->
+</head>
+<body>
+    <!-- Header -->
+
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top nav-menu navbar-light bg-dark" >
+      <a href="#" class="navbar-brand text-light text-uppercase"><span class="h2 font-weight-bold text-warning">EDACY</span></a>
+     <!-- <button type="button" class="navbar-toggler nav-button" data-toggle="collapse" data-target="#myNavbar">
+        <div class="bg-light line1"></div>
+        <div class="bg-light line2"></div>
+        <div class="bg-light line3"></div>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link font-weight-bold m-2 menu-item nav-active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link font-weight-bold m-2 menu-item" href="#">Mission</a></li>
+          <li class="nav-item"><a class="nav-link font-weight-bold m-2 menu-item" href="#">Collection</a></li>
+          <li class="nav-item"><a class="nav-link font-weight-bold m-2 menu-item" href="#">Galery</a></li>
+          <li class="nav-item"><a class="nav-link font-weight-bold m-2 menu-item" href="#">Customers</a></li>
+          <li class="nav-item"><a class="nav-link font-weight-bold m-2 menu-item" href="#">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link font-weight-bold m-2 menu-item" href="#">Contact</a></li>
+        </ul>
+      </div>-->
+    </nav>
+    <!-- End Navbar -->
+      <!-- Banner -->
+    <div class="row justify-content-center banner">
+				<div class="col-lg-4 col-md-4 col-sm-10">
+			<form method="POST" action="{{ url_for('login') }}">
+                <div class="form-group">
+                    <img src="./static/img/person.jpg" class="img-thumbnail" style="height: 15%; width: 45%;margin-left:25%">
+                    </div>
+				<div class="form-group">
+							<label for="email">Email</label>
+							<input type="text" class="form-control" id="email" name="email">
+						</div>
+						<div class="form-group">
+							<label for="passwords">Mot De Passe</label>
+							<input type="password" class="form-control" id="passwords" name="passwords">
+						</div>
+						<button class="btn btn-outline-warning btn-block" type="submit">Submit</button>
+			</form>
+                    </div>
+        </div>
+    </div>
+      </header>
+    <!-- End Banner -->
+</body>
+</html>
