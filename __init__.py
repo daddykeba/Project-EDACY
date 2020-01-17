@@ -1,5 +1,9 @@
+import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+#from .predictions import resul
+#os.system("C:/Users/LENOVO/flaskedacy/flasktuto/")
+
 
 # init SQLAlchemy so we can use it later in our models
 db = SQLAlchemy()

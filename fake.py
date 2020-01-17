@@ -1,11 +1,11 @@
 import csv
 from faker import Faker
 
-record_count = 10000
+record_count = 500
 fake = Faker()
 
 def create_csv_file():
-    with open('D:/talents.csv', 'w', newline='') as csvfile:
+    with open('D:/Django-Tutoriel/talents.csv', 'w', newline='') as csvfile:
         fiednames = ['id', 'prenom', 'nom', 'genre', 'age', 'background', 'cohorte', 'tauxPart',
                      'visiPlat', 'discussion', 'noteTalent', 'noteInst', 'retards', 'absences', 'parti']
         writer = csv.DictWriter(csvfile, fieldnames=fiednames)
@@ -19,7 +19,7 @@ def create_csv_file():
                 'genre': fake.random_element(elements=('F', 'M')),
                 'age': fake.random_int(min=18, max=30),
                 'background': fake.random_element(elements=('Licence 3', 'Master 1', 'Master 2')),
-                'cohorte': fake.random_element(elements=('cohorte 7', 'cohorte 6', 'cohorte 5', 'cohorte 4', 'cohorte 3', 'cohorte 2', 'cohorte 1')),
+                'cohorte': fake.random_element(elements=('cohorte 7', 'cohorte 6', 'cohorte 5')),
                 'tauxPart': fake.random_int(min=1, max=50),
                 'visiPlat': fake.random_int(min=1, max=30),
                 'discussion': fake.random_int(min=1, max=50),
